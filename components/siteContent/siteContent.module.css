@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.site_content {
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+.site_content:hover {
+  transform: scale(0.9);
+  transition-duration: 100ms;
+}
+
+.site_content .image {
+  height: auto;
+}
+
+.site_content .title {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #646464;
+}
+
+@media screen and (max-width: 640px) {
+  .site_content .image {
+    width: 100px;
+    height: auto;
+  }
+}

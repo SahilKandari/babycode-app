@@ -1,0 +1,18 @@
+.container {
+  margin-left: 260px;
+  position: absolute;
+  height: 30px;
+  width: calc(100% - 260px - 4rem);
+  background-color: white;
+  padding: 10px 2rem;
+}
+
+.user {
+  display: flex;
+  justify-content: right;
+}
+
+.user_icon {
+  color: #1552c5;
+  cursor: pointer;
+}
