@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './sidenav.module.css';
 import { IconHome, IconPlanet, IconUsers, IconTower, IconBuildingStore, IconMessageDots, IconLogout  } from '@tabler/icons-react';
+import PremiumCard from '../premiumCard/PremiumCard';
 
 const Sidenav = () => {
   const [selectedItem, setSelectedItem] = useState('Home'); // Initialize state with 'Home' as default selected item
@@ -42,10 +43,7 @@ const Sidenav = () => {
             <p className={styles.text}>Logout</p>
           </div>
         </div>
-      </div>
-
-      <div className={styles.mob_container}>
-        
+        <PremiumCard className='hide-on-small'/>
       </div>
     </>
   )

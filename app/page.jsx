@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import ShareApp from "@/components/shareApp/ShareApp";
 import SiteContent from "@/components/siteContent/SiteContent";
 import Image from "next/image";
+import PremiumCard from "@/components/premiumCard/PremiumCard";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
           <BasicLineChart/>
         </div>
         <ShareApp/>
+      </div>
+      <div className={styles.section}>
+        <PremiumCard className='hide-on-large'/>
       </div>
       <h5 className={styles.title}>Prepage with ease</h5>
       <div className={styles.section}>
